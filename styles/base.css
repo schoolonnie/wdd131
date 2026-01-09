@@ -192,6 +192,7 @@ footer p {
 
 #resources {
   grid-column: 2;
+  min-height: 380px;
 }
 
 #resources ul {
