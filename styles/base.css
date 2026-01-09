@@ -8,8 +8,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
   min-height: 100vh;
 }
 
@@ -17,15 +17,23 @@ header {
   background: var(--primary-color);
   text-align: center;
   padding-top: 1rem;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   color: var(--text-color);
 }
 
 h1 {
   text-align: center;
-  padding-top: 1rem;
+  margin: 0;
   font-family: Ubuntu;
-  grid-column: 1 / 4;
+}
+
+main > h1 {
+  grid-column: 1 / -1;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 h2 {
@@ -55,14 +63,16 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 0.5rem;
-  align-items: stretch;
+  align-items: start;
   min-height: 0;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0.25rem auto 0 auto;
   width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  align-self: start;
 }
 
 figure {
@@ -81,11 +91,15 @@ figcaption {
 
 footer {
   background: var(--primary-color);
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   text-align: center;
-  grid-column: 1 / 4;
-  grid-row: 5 / 6;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
   color: var(--text-color);
+}
+
+footer p {
+  margin: 0.25rem 0;
 }
 
 .navigation {
