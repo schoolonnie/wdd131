@@ -26,6 +26,7 @@ nav {
   margin: 0;
   width: 100%;
   padding-top: 1rem;
+  display: flex;
 }
 
 main {
@@ -52,12 +53,14 @@ footer p {
 }
 
 .navigation {
-  display: flex;
+    display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style: none;
 	background-color: var(--secondary-color);
-	color: #fff
+    color: #fff;
+	width: 100%;
+    margin: 0;
 }
 
 .navigation li {
