@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lonnie Smith">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lonnie Smith - temple project page">
+    <title>WDD 131 - Temples - Lonnie Smith</title>
+<!-- styles -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- scripts -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="title">Temple Album</span>
+        <button aria-label="toggle menu" id="menu"> </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="temple-gallery" id="temple-gallery">
+            <figure class="temple-card">
+                <img src="images/temples/salt-lake-temple.jpg" alt="Salt Lake Temple"/>
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/freiberg-germany-temple.jpg" alt="Freiberg Germany Temple"/>
+                <figcaption>Freiberg Germany Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/sao-paulo-brazil-temple.jpg" alt="Sao Paulo Brazil Temple"/>
+                <figcaption>Sao Paulo Brazil Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/tokyo-japan-temple.jpg" alt="Tokyo Japan Temple"/>
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/rome-italy-temple.jpg" alt="Rome Italy Temple"/>
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/sydney-australia-temple.jpg" alt="Sydney Australia Temple"/>
+                <figcaption>Sydney Australia Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/accra-ghana-temple.jpg" alt="Accra Ghana Temple"/>
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/mesa-arizona-temple.jpg" alt="Mesa Arizona Temple"/>
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>  
+            <figure class="temple-card">
+                <img src="images/temples/quito-ecuador-temple.jpg" alt="Quito Ecuador Temple"/>
+                <figcaption>Quito Ecuador Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/stockholm-sweden-temple.jpg" alt="Stockholm Sweden Temple"/>
+                <figcaption>Stockholm Sweden Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/toronto-canada-temple.jpg" alt="Toronto Canada Temple"/>
+                <figcaption>Toronto Canada Temple</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/temples/las-vegas-nevada-temple.jpg" alt="Las Vegas Nevada Temple"/>
+                <figcaption>Las Vegas Nevada Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+    <!-- scripts -->
+    <script src="scripts/temples.js" defer></script>
+</body>
