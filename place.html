@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lonnie Smith">
+    <meta name="description" content="Place assignment for WDD131 - Seoul, South Korea">
+    <title>Lonnie Smith WDD131 - Seoul, South Korea</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!-- Scripts -->
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    
+    <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/place/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/place/hero-medium.webp">
+                <img src="images/place/hero-small.webp" alt="Seoul Korea">
+            </picture>
+    </div>    
+    <div class="grid">   
+        <header>
+            <h1>Seoul, South Korea</h1>
+        </header>
+        <main>
+            <section class="card" id="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><b>Area:</b> 605.21 km²</li>
+                    <li><b>Population:</b> 9.6 million (2025)</li>
+                    <li><b>Capital:</b> Seoul</li>
+                    <li><b>Language:</b> Korean</li>
+                    <li><b>Currency:</b> South Korean Won (KRW)</li>
+                    <li><b>Time Zone:</b> Korea Standard Time (KST, UTC+9)</li>
+                    <li><b>Calling Code:</b> +82</li>
+                    <li><b>Internet TLD:</b> .kr</li>
+                </ul>
+            </section>
+            <section class="card" id="weather-card">
+                <h2 class="sm-view">Weather</h2>
+                <h2 class="lg-view">Weather &#127780;</h2>
+                <img id="weathericon" src="images/place/weather-icon.svg" alt="Weather Icon" width="100">
+                <ul>
+                    <li><b>Temperature:</b>10&deg;C</li>
+                    <li><b>Conditions:</b>Sunny and Cloudy</li>
+                    <li><b>Wind:</b>7.2 km/h</li>
+                    <li><b>Wind Chill:</b><span id="windchill"></span></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+            <p id="lastModified">Last Modified: </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+:root {
+  --primary-color: rgb(50, 25, 120);
+  --secondary-color: #333;
+  --tertiary-color: #ebeb60;
+  --text-color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    border-bottom: var(--tertiary-color) 4px solid;
+}
+
+main {
+    margin-top: 750px;
+}
+
+h1 {
+    margin: 0;
+  background: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+    padding: 1rem 0;
+    font-family: Ubuntu;
+}
+
+h2 {
+    margin: 0.5rem 0;
+    font-family: Ubuntu;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+footer {
+  background: var(--primary-color);
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--text-color);
+  width: 100%;
+  font-family: Arial
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+.hero {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0.25rem;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: Arial;
+}
+
+.card li {
+    margin: 0.25rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;;
+    position: relative;
+}
+
+.sm-view {
+    display: block;
+}
+
+.lg-view {
+    display: none;
+}
