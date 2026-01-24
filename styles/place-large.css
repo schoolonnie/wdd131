@@ -17,6 +17,12 @@
         padding-bottom: 0.25rem;
     }
 
+    h2::after {
+        content: "";
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+
     footer {
         position: absolute;
         top: 100vh;
