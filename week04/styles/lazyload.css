@@ -1,0 +1,58 @@
+:root {
+  --primary-color: rgb(50, 25, 120);
+  --secondary-color: #333;
+  --tertiary-color: #ebeb60;
+  --text-color: #fff;
+}
+
+h1 {
+  margin: 0;
+  background: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    background: #000;
+    animation: fade 5s;
+}
+
+footer {
+  background: var(--primary-color);
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--text-color);
+  width: 100%;
+  font-family: Arial
+}
+
+.image-section {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 900px) {
+    img {
+        width: 40%;
+    }
+}

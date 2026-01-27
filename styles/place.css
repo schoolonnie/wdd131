@@ -82,7 +82,7 @@ footer p {
 
 .grid {
     display: grid;
-    grid-template-columns: 100%;;
+    grid-template-columns: 100%;
     position: relative;
 }
 
