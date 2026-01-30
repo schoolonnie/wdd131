@@ -101,7 +101,7 @@ function createTempleCard(filteredTemples) {
 		<p class="temple-location"><strong>Location:</strong> ${temple.location}</p>
 		<p class="temple-dedicated"><strong>Dedicated:</strong> ${temple.dedicated}</p>
 		<p class="temple-area"><strong>Area:</strong> ${temple.area.toString()} sq ft</p>
-		<img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName} Image" class="temple-image"/>
+		<img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" class="temple-image"/>
 	`;
 	templeGallery.appendChild(templeCard);
 	});
