@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lonnie Smith - form assignment page">
     <title>WDD 131 - Form assignment - Lonnie Smith</title>
 <!-- styles -->
-    <link defer rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css">
 <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,24 +29,33 @@
             </select>
             <div class="overallRating">
                 <h2>Overall Rating:</h2>
-                <input type="radio" name="rating" id="rating1" required aria-label="Select 1 Star">&star;</input>
-                <input type="radio" name="rating" id="rating2" required aria-label="Select 2 Star">&star;&star;</input>
-                <input type="radio" name="rating" id="rating3" required aria-label="Select 3 Star">&star;&star;&star;</input>
-                <input type="radio" name="rating" id="rating4" required aria-label="Select 4 Star">&star;&star;&star;&star;</input>
-                <input type="radio" name="rating" id="rating5" required aria-label="Select 5 Star">&star;&star;&star;&star;&star;</input>
+                <label for="rating1">&star;</label>
+                <input type="radio" name="rating" id="rating1" required aria-label="Select 1 Star" value="1">
+                <label for="rating2">&star;&star;</label>
+                <input type="radio" name="rating" id="rating2" required aria-label="Select 2 Star" value="2">
+                <label for="rating3">&star;&star;&star;</label>
+                <input type="radio" name="rating" id="rating3" required aria-label="Select 3 Star" value="3">
+                <label for="rating4">&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" id="rating4" required aria-label="Select 4 Star" value="4">
+                <label for="rating5">&star;&star;&star;&star;&star;</label>
+                <input type="radio" name="rating" id="rating5" required aria-label="Select 5 Star" value="5">
             </div>
             <h2>Installation Date:</h2>
             <input type="date" name="installDate" id="installDate" required aria-label="Date of Installation">
             <div class="features">
-                <h2>Which features did you find useful in this product? <span style="font-style: italic;">(Check all that apply)</span></h2>
-                <input type="checkbox" name="feature" id="feature1" value="0" aria-label="Select Durability">Durability</input>
-                <input type="checkbox" name="feature" id="feature2" value="0" aria-label="Select Ease of Use">Ease of Use</input>
-                <input type="checkbox" name="feature" id="feature3" value="0" aria-label="Select Performance">Performance</input>
-                <input type="checkbox" name="feature" id="feature4" value="0" aria-label="Select Design">Design</input>
+                <h2>Which features did you find useful in this product? (Check all that apply)</h2>
+                <label for="feature1">Durability</label>
+                <input type="checkbox" name="feature" id="feature1" value="0" aria-label="Select Durability">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" name="feature" id="feature2" value="0" aria-label="Select Ease of Use">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" name="feature" id="feature3" value="0" aria-label="Select Performance">
+                <label for="feature4">Design</label>
+                <input type="checkbox" name="feature" id="feature4" value="0" aria-label="Select Design">
             </div>
-            <h2>Written Review: <span style="color: blue;">(Optional)</span></h2>
+            <h2>Written Review: </h2>
             <textarea name="writtenReview" id="writtenReview" aria-label="Written Review Section"></textarea>
-            <h2>Your Name: <span style="color: blue;">(Optional)</span></h2>
+            <h2>Your Name: </h2>
             <input type="text" name="userName" id="userName" aria-label="Enter User Name"></input>
             <input type="submit" value="Submit Review" aria-label="Submit Review"></input>
         </form>
