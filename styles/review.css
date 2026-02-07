@@ -1,0 +1,41 @@
+:root {
+  --primary-color: rgb(50, 25, 120);
+  --secondary-color: #333;
+  --tertiary-color: #f5f5f5;
+  --text-color: #fff;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 0.25rem;
+  color: var(--text-color);
+  font-family: Ubuntu;
+}
+h2 {
+    border-bottom: 1px solid #000;
+}
+footer {
+  background: var(--primary-color);
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--text-color);
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+footer p {
+  margin: 0.25rem 0;
+}
+.submitMsg {
+    max-width: 60%;
+    margin: 3rem auto;
+    padding: 2rem 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background: var(--tertiary-color);
+    text-align: center;
+}
