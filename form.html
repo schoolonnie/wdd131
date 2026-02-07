@@ -23,6 +23,7 @@
     <main>
         <form id="reviewForm" method="get" action="review.html">
             <h2>Product:</h2>
+            <label hidden for="product">Product Selection</label>
             <select name="product" id="product" required aria-label="Select Product">
                 <option value="" disabled selected>Select a product</option>
                 <!-- Options will be dynamically inserted here -->
@@ -41,6 +42,7 @@
                 <input type="radio" name="rating" id="rating5" required aria-label="Select 5 Star" value="5">
             </div>
             <h2>Installation Date:</h2>
+            <label hidden for="installDate">Date of Install</label>
             <input type="date" name="installDate" id="installDate" required aria-label="Date of Installation">
             <div class="features">
                 <h2>Which features did you find useful in this product? (Check all that apply)</h2>
@@ -54,10 +56,12 @@
                 <input type="checkbox" name="feature" id="feature4" value="0" aria-label="Select Design">
             </div>
             <h2>Written Review: </h2>
+            <label hidden for="writtenReview">Write a Review</label>
             <textarea name="writtenReview" id="writtenReview" aria-label="Written Review Section"></textarea>
             <h2>Your Name: </h2>
-            <input type="text" name="userName" id="userName" aria-label="Enter User Name"></input>
-            <input type="submit" value="Submit Review" aria-label="Submit Review"></input>
+            <label hidden for="userName">User's Name</label>
+            <input type="text" name="userName" id="userName" aria-label="Enter User Name">
+            <input type="submit" value="Submit Review" aria-label="Submit Review">
         </form>
     </main>
     <footer>
