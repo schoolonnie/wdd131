@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lonnie Smith">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lonnie Smith - form assignment page">
+    <title>WDD 131 - Form assignment - Lonnie Smith</title>
+<!-- styles -->
+    <link defer rel="stylesheet" href="styles/form.css">
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- scripts -->
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <h2>Product:</h2>
+            <select name="product" id="product" required aria-label="Select Product">
+                <option value="" disabled selected>Select a product</option>
+                <!-- Options will be dynamically inserted here -->
+            </select>
+            <div class="overallRating">
+                <h2>Overall Rating:</h2>
+                <input type="radio" name="rating" id="rating1" required aria-label="Select 1 Star">&star;</input>
+                <input type="radio" name="rating" id="rating2" required aria-label="Select 2 Star">&star;&star;</input>
+                <input type="radio" name="rating" id="rating3" required aria-label="Select 3 Star">&star;&star;&star;</input>
+                <input type="radio" name="rating" id="rating4" required aria-label="Select 4 Star">&star;&star;&star;&star;</input>
+                <input type="radio" name="rating" id="rating5" required aria-label="Select 5 Star">&star;&star;&star;&star;&star;</input>
+            </div>
+            <h2>Installation Date:</h2>
+            <input type="date" name="installDate" id="installDate" required aria-label="Date of Installation">
+            <div class="features">
+                <h2>Which features did you find useful in this product? <span style="font-style: italic;">(Check all that apply)</span></h2>
+                <input type="checkbox" name="feature" id="feature1" value="0" aria-label="Select Durability">Durability</input>
+                <input type="checkbox" name="feature" id="feature2" value="0" aria-label="Select Ease of Use">Ease of Use</input>
+                <input type="checkbox" name="feature" id="feature3" value="0" aria-label="Select Performance">Performance</input>
+                <input type="checkbox" name="feature" id="feature4" value="0" aria-label="Select Design">Design</input>
+            </div>
+            <h2>Written Review: <span style="color: blue;">(Optional)</span></h2>
+            <textarea name="writtenReview" id="writtenReview" aria-label="Written Review Section"></textarea>
+            <h2>Your Name: <span style="color: blue;">(Optional)</span></h2>
+            <input type="text" name="userName" id="userName" aria-label="Enter User Name"></input>
+            <input type="submit" value="Submit Review" aria-label="Submit Review"></input>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
