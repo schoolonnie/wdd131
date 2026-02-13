@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lonnie Smith">
+    <meta name="description" content="A comparison of pixel and voxel based videogames including information about each game and why the viewer might choose to play one over another.">
+    <title>Squares Compared - Starbound</title> 
+<!-- styles -->
+    <link rel="stylesheet" href="styles/starbound.css">
+    <link rel="stylesheet" href="styles/starbound-large.css">
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<!-- scripts -->
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="scripts/squares.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.webp" alt="logo">
+        <h1>Squares Compared</h1>
+        <!--Hamburger menu-->
+        <button aria-label="toggle menu" id="menu"> </button>
+        <nav>
+	        <ul class="navigation">
+		        <li><a href="./squares.html" title="Home">Home</a></li>
+		        <li class="pop-holder"><a href="#" title="Pixel"><i class="icon-down">▼</i><i class="icon-up">▲</i>Pixel/2D</a>
+                    <ul class="pop-out">
+                        <li><a href="./terraria.html" title="Terraria">Terraria</a>
+                        <li><a href="./starbound.html" title="Starbound">Starbound</a>
+                    </ul>
+                </li>
+		        <li class="pop-holder"><a href="#" title="Voxel"><i class="icon-down">▼</i><i class="icon-up">▲</i>Voxel/3D</a>
+                    <ul class="pop-out">
+                        <li><a href="./minecraft.html" title="Minecraft">Minecraft</a>
+                        <li><a href="./hytale.html" title="Hytale">Hytale</a>
+                    </ul>
+                </li>
+                <li><a href="./tracker.html" title="Game-Tracker">Game Tracker</a></li>
+	        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-box">
+            <h2>Starbound</h2>
+            <p>
+                Starbound was released July 22nd, 2016. You take on the role of protectorate graduate. 
+                At your graduation, however, things don't go as planned and you must leave your home-planet 
+                and find yourself lost in space with just some basic gear and a damaged spaceship. Your
+                goal? Simple. Save the universe from the threat that destroyed your home. If you want to, 
+                anyway. This game, like all others found here on Squares Compared, is open-ended and has no 
+                locked-in goal. You can follow the story at whatever pace you like. Or not at all. 
+            </p>
+            <ul>
+                <li>Released: 07/22/2016</li>
+                <li>Developed by: Chucklefish</li>
+                <li>Published by: Chucklefish</li>
+                <li>Made with: C++ (custom Starbound game-engine)</li>
+            </ul>
+            <figure>
+                <a href="./images/starbound/starbound-menu.webp">
+                    <img loading="lazy" src="./images/starbound/starbound-menu-thumbnail.webp" alt="Click to enlarge" width="200">
+                </a>
+                <figcaption>Starbound Main Menu</figcaption>
+            </figure>
+        </div>
+        <div class="content-box">
+            <p>
+                Starbound, at first glance, might seem like a clone of Terraria or something. It's also a 2D 
+                pixelated open-world survival-craft game. Unlike Terraria, however, Starbound is a little more 
+                RPG focused. It has a questing system (including a main story quest-line), level-up system, 
+                procedurally generated stats for loot and gear, and even a character customizer with multiple 
+                different playable species.<br>
+                <img loading="lazy" src="./images/starbound/starbound-character.webp" alt="Starbound character customizer" id="cust-char-image">
+                The story is completely optional, but making a little progress will unlock some content. The 
+                story quests revolve around scanning items from different species and defeating a boss that 
+                is oppressing that species. You repeat this for all 7 species and then take on the final boss. 
+                The final boss being the monster that destroyed your home in the opening cutscene.<br>
+                <a href="./images/starbound/starbound-cutscene.webp">
+                    <img loading="lazy" src="./images/starbound/starbound-cutscene-thumbnail.webp" alt="Click to enlarge" width="200" id="cutscene-image">
+                </a>
+                Starbound is super relaxed with how the game progresses. Instead of proceeding with the main 
+                missions, the player can just fly their spaceship wherever they please. The game takes place 
+                in a massive procedurally generated universe containing countless star systems each with 
+                planets, moons, space stations, asteroids, and many other places to land or at least orbit 
+                around. All you have to do is complete the first couple of missions to fix up your damaged 
+                ship.<br>
+                <img loading="lazy" src="./images/starbound/starbound-ship.webp" alt="Starbound damaged novakid ship" id="ship-image">
+                The fun doesn't stop there! Starbound has a huge community of modders and plenty of custom 
+                content to keep you playing for hours. The mods range from items to vehicles to enemies to new 
+                playable species.<br>
+                <img loading="lazy" src="./images/starbound/starbound-outside.webp" alt="Starbound planet surface" id="surface-image">
+
+                <br><br><br>
+                Players might want to choose Starbound over other games if they prefer:
+                <ul>
+                    <li>Relaxed progression</li>
+                    <li>A sligtly more RPG tailored experience</li>
+                    <li>Exploring on a massive scale</li>
+                    <li>SPACE!</li>
+                </ul>
+                All images are screenshots taken by me, all credit for assets and the game itself goes to Chucklefish
+            </p>
+        </div>
+        <div class="links-box">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://playstarbound.com/" title="Game-Site">Starbound's Home Page</a></li>
+                <li><a href="https://starbounder.org/Starbound_Wiki" title="Wiki">Starbound's Official Wiki</a></li>
+                <li><a href="https://store.steampowered.com/app/211820/Starbound/" title="Steam-Page">Get the game on Steam!</a></li>
+                <li><a href="https://steamcommunity.com/app/211820/workshop/" title="Mods">Check out MODS and MAPS for the game!</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>

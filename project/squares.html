@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lonnie Smith">
+    <meta name="description" content="A comparison of pixel and voxel based videogames including information about each game and why the viewer might choose to play one over another.">
+    <title>Squares Compared</title> 
+<!-- styles -->
+    <link rel="stylesheet" href="styles/squares.css">
+    <link rel="stylesheet" href="styles/squares-large.css">
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<!-- scripts -->
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="scripts/squares.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.webp" alt="logo">
+        <h1>Squares Compared</h1>
+        <!--Hamburger menu-->
+        <button aria-label="toggle menu" id="menu"> </button>
+        <nav>
+	        <ul class="navigation">
+		        <li><a href="./squares.html" title="Home">Home</a></li>
+		        <li class="pop-holder"><a href="#" title="Pixel"><i class="icon-down">▼</i><i class="icon-up">▲</i>Pixel/2D</a>
+                    <ul class="pop-out">
+                        <li><a href="./terraria.html" title="Terraria">Terraria</a>
+                        <li><a href="./starbound.html" title="Starbound">Starbound</a>
+                    </ul>
+                </li>
+		        <li class="pop-holder"><a href="#" title="Voxel"><i class="icon-down">▼</i><i class="icon-up">▲</i>Voxel/3D</a>
+                    <ul class="pop-out">
+                        <li><a href="./minecraft.html" title="Minecraft">Minecraft</a>
+                        <li><a href="./hytale.html" title="Hytale">Hytale</a>
+                    </ul>
+                </li>
+                <li><a href="./tracker.html" title="Game-Tracker">Game Tracker</a></li>
+	        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-box">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Squares Compared!
+            <br><br>
+            We're here to talk about SQUARES!<br>
+            Squares compared is an informational website about various pixel and voxel based open-world sandbox games.<br>
+            We offer information about each game and why a player might want to play one over another.<br>
+            <br><br>
+            Take a poke around and check out some of the games we offer information about.
+            <br><br>
+            Also take a look at our Game Tracker to keep track of games you've played!
+        </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &star; Lonnie Smith &star; United States</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
